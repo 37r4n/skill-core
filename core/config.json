@@ -1,0 +1,57 @@
+{
+  "name": "core",
+  "intents": [
+    {
+      "name": "calculator",
+      "slots": [
+        { 
+          "name": "number_1", 
+          "type": "TYPE.NUMBER" 
+        },
+        { 
+          "name": "number_2", 
+          "type": "TYPE.NUMBER" 
+        },
+        { 
+          "name": "operator", 
+          "type": "TYPE.OPERATOR" 
+        }
+      ],
+      "samples": [
+        "¿Cuánto es {number_1} {operator} {number_2}?",
+        "Calcula {number_1} {operator} {number_2}",
+        "Realiza la operación {number_1} {operator} {number_2}"
+      ]
+    },
+    {
+      "name": "get_date",
+      "slots": [],
+      "samples": [ 
+        "¿Qué día es hoy?", 
+        "Dime la fecha", 
+        "¿Qué fecha es?", 
+        "¿En qué día estamos?" 
+      ]
+    },
+    {
+      "name": "get_time",
+      "slots": [],
+      "samples": [ 
+        "¿Qué hora es?", 
+        "Dime la hora",  
+        "¿Tienes la hora?", 
+        "¿Puedes decirme qué hora es?", 
+        "¿Me das la hora?" 
+      ]
+    },
+    {
+      "name": "tell_joke",
+      "slots": [],
+      "samples": [ 
+        "Cuéntame un chiste",  
+        "Hazme reír",  
+        "Dime algo gracioso" 
+      ]
+    }
+  ]
+}
