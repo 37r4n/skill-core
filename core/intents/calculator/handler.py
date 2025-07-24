@@ -13,7 +13,7 @@ def handler(params):
         "text": "¿Qué operación deseas realizar?"
         },
         "end_session": False,
-        "params":{
+        "slots":{
            "number_1": number_1,
            "number_2": number_2
         }
