@@ -1,4 +1,4 @@
-from .intents import get_date, get_time, tell_joke, calculator
+from .intents import get_date, get_time, tell_joke, calculator, guess_number
 
 def handler(params):
   intent = params.get('intent')
@@ -16,3 +16,6 @@ def handler(params):
   
   if intent == 'tell_joke':
     return tell_joke.handler(params)
+
+  if intent == 'guess_number':
+    return guess_number.handler(params)

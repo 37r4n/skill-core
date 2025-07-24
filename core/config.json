@@ -1,21 +1,13 @@
 {
   "name": "core",
   "intents": [
+
     {
       "name": "calculator",
       "slots": [
-        { 
-          "name": "number_1", 
-          "type": "TYPE.NUMBER" 
-        },
-        { 
-          "name": "number_2", 
-          "type": "TYPE.NUMBER" 
-        },
-        { 
-          "name": "operator", 
-          "type": "TYPE.OPERATOR" 
-        }
+        { "name": "number_1", "type": "TYPE.NUMBER" },
+        { "name": "number_2", "type": "TYPE.NUMBER" },
+        { "name": "operator", "type": "TYPE.OPERATOR" }
       ],
       "samples": [
         "¿Cuánto es {number_1} {operator} {number_2}?",
@@ -23,6 +15,7 @@
         "Realiza la operación {number_1} {operator} {number_2}"
       ]
     },
+
     {
       "name": "get_date",
       "slots": [],
@@ -33,6 +26,7 @@
         "¿En qué día estamos?" 
       ]
     },
+
     {
       "name": "get_time",
       "slots": [],
@@ -44,6 +38,18 @@
         "¿Me das la hora?" 
       ]
     },
+
+    {
+      "name": "guess_number",
+      "slots": [
+        { "name": "assistant_number", "type": "TYPE.NUMBER" },
+        { "name": "user_guess", "type": "TYPE.NUMBER" }
+      ],
+      "samples": [
+        "Juguemos a adivinar un numero"
+      ]
+    },
+
     {
       "name": "tell_joke",
       "slots": [],
